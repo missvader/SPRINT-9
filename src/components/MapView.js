@@ -5,7 +5,7 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 const MapView = () => {
   const [lng, setLng] = useState(2.1943282266720554);
   const [lat, setLat] = useState(41.4026419193428);
-  console.log(process.env)
+  /*console.log(process.env)*/
   return (
     <div>
       <Map
@@ -20,10 +20,6 @@ const MapView = () => {
         }}
         mapStyle="mapbox://styles/mapbox/streets-v12"
       >
-        <Marker
-          longitude={lng}
-          latitude={lat}
-        />
         <NavigationControl
           position="bottom-right"
         />
